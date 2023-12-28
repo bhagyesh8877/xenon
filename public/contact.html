@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f9fa;
+            color: #495057;
+        }
+
+        header {
+            background-color: #94f60b;
+            color: black;
+            padding: 2px;
+          }
+          .contact{
+            text-align: center;
+          }
+
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            margin: 0 10px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #117be5;
+            color: white;
+            padding: 2px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+          }
+    </style>
+</head>
+
+<body>
+    <header>
+        
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <h1 class="contact">Contact Us</h1>
+
+    <form id="contactForm">
+        <input type="text" id="name" placeholder="Name">
+        <input type="email" id="email" placeholder="Email">
+        <textarea id="message" placeholder="Your Message"></textarea>
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+
+    <footer>
+        <h4>&copy; Copyright 2023</h4>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="contact.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f9fa;
+            color: #495057;
+        }
+
+        header {
+            background-color: #94f60b;
+            color: black;
+            padding: 2px;
+          }
+
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            margin: 0 10px;
+            padding: 10px;
+            border-radius: 5px;
+           
+        }
+
+      
+
+        main {
+            background-image: none;
+
+        }
+
+        footer {
+            background-color: #117be5;
+            color: white;
+            padding: 2px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+          }
+          .dash{
+            text-align: center;
+          }
+          .image{
+            image-orientation: from-image;
+          }
+    </style>
+</head>
+
+<body>
+    <header>
+        
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="#" onclick="logout()">Logout</a>
+        </nav>
+    </header>
+    <h1 class="dash">Dashboard</h1>
+
+    
+
+    <footer>
+        <h4>&copy; Copyright 2023</h4>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="dashboard.js"></script>
+
+</body>
+
+</html>
