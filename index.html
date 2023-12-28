@@ -1,0 +1,103 @@
+<!-- public/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Add a custom style block for inline CSS -->
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: lightcyan;
+    }
+
+    header {
+      background-color: #94f60b;
+      color: black;
+      padding: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+    }
+
+    .drop-button a {
+      text-decoration: none;
+      color: black;
+      margin-right: 20px;
+    }
+
+    .float-right {
+      display: flex;
+      align-items: center;
+    }
+
+    .btn {
+      text-decoration: none;
+      color: black;
+      
+      padding: 8px 15px;
+      margin-right: 10px;
+      border-radius: 5px;
+    }
+
+   
+
+    .heading {
+      color: #007bff;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    footer {
+      background-color: #117be5;
+      color: white;
+      padding: 2px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+    }
+  </style>
+  <title>Main Page</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="drop-button">
+        <a href="index.html">Home</a>
+        <a target="_blank" href="contact.html">Contact</a>
+        <a class="btn" href="login.html">Login</a>
+        <a class="btn" href="register.html">Register</a>
+      </div>
+    </nav>
+  </header>
+  <h1 class="heading">Welcome to Go-Kart an e-commerce platform for all your needs.</h1>
+
+  
+  <footer>
+    <h4>@Copyright-2023</h4>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>
+    function navigateToDashboard() {
+      window.location.href = "/dashboard";
+    }
+  </script>
+</body>
+</html>
